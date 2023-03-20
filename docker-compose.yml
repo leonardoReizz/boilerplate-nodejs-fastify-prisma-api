@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  node-db:
+    image: bitnami/postgresql
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRESQL_USERNAME=node-user
+      - POSTGRESQL_PASSWORD=node-pass
+      - POSTGRESQL_DATABASE=node-database
